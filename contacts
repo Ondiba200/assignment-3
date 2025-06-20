@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Enock Kiptoo</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Embedded CSS -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e3eaf2;
+      margin: 0;
+      color: #1a1a1a;
+    }
+
+    header {
+      background-color: #2b3d4f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1f2a36;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2b3d4f;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #1f2a36;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ffc107;
+      color: #1f2a36;
+    }
+
+    .footer {
+      background-color: #2b3d4f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .footer a {
+      color: #ffc107;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .footer img {
+      vertical-align: middle;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 style="letter-spacing: 1px;">Enock Kiptoo | Get in Touch</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <div class="content">
+    <h2>Let's Connect</h2>
+    <p style="text-align: center; font-style: italic;">If you have a project, idea, or opportunity you'd like to discuss, drop me a message below!</p>
+
+    <form action="#" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><strong>Enock Kiptoo</strong> | Web & CAD Developer</div>
+    <div>
+      <a href="index.html">Home</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <a href="https://instagram.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="30">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="30">
+      </a>
+    </div>
+    <div style="margin-top: 10px;">&copy; 2025 Enock Kiptoo. All rights reserved.</div>
+  </div>
+
+</body>
+</html>
