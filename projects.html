@@ -42,7 +42,7 @@
     }
 
     .content {
-      max-width: 850px;
+      max-width: 1000px;
       margin: 40px auto;
       background-color: white;
       padding: 40px;
@@ -55,17 +55,25 @@
       color: #2b3d4f;
     }
 
-    .project-card {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      background-color: #fdfdfd;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
     }
 
-    .project-card h3 {
-      margin-top: 0;
-      color: #1f2a36;
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #1f2a36;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f0f0f0;
     }
 
     .footer {
@@ -93,7 +101,7 @@
 
   <!-- Header -->
   <header>
-    <h1 style="letter-spacing: 1px;">Enock Kiptoo | Portfolio</h1>
+    <h1 style="letter-spacing: 1px;">Enock Kiptoo | Portfolio Projects</h1>
   </header>
 
   <!-- Navigation Bar -->
@@ -103,30 +111,58 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Projects Section -->
+  <!-- Projects Table Section -->
   <div class="content">
-    <h2>My Recent Projects</h2>
-    <p style="text-align: center; font-style: italic;">Here are a few examples of what I’ve been working on recently.</p>
+    <h2>Project List (Table View)</h2>
+    <p style="text-align: center; font-style: italic;">Explore my recent projects presented in a clean and organized table.</p>
 
-    <div class="project-card">
-      <h3>Personal Portfolio Website</h3>
-      <p>A responsive and professional portfolio to showcase my design and development skills. Built with HTML, CSS, and JavaScript.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Online Bookstore</h3>
-      <p>An e-commerce web application for books. Features include user authentication, a cart system, and admin dashboard.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Task Manager App</h3>
-      <p>A simple yet powerful task manager with deadline alerts, prioritization, and mobile support. Built using React and Firebase.</p>
-    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Project Title</th>
+          <th>Description</th>
+          <th>Technology</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Personal Portfolio</td>
+          <td>A responsive website to showcase my web skills.</td>
+          <td>HTML, CSS, JavaScript</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Online Bookstore</td>
+          <td>E-commerce platform for digital and physical books.</td>
+          <td>PHP, MySQL, Bootstrap</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>CAD Engine Layout</td>
+          <td>3D CAD model of a simplified engine block.</td>
+          <td>AutoCAD, Fusion 360</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Task Tracker</td>
+          <td>A productivity app with notifications and deadlines.</td>
+          <td>React, Firebase</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>School Timetable System</td>
+          <td>Automates class schedule generation for schools.</td>
+          <td>Python, Django</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <!-- Footer -->
   <div class="footer">
-    <div><strong>Enock Kiptoo</strong> | Web Designer & Developer</div>
+    <div><strong>Enock Kiptoo</strong> | Web & CAD Developer</div>
     <div>
       <a href="index.html">Home</a> |
       <a href="projects.html">Projects</a> |
